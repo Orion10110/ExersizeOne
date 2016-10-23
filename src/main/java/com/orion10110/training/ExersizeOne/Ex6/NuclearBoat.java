@@ -1,5 +1,7 @@
 package com.orion10110.training.ExersizeOne.Ex6;
 
+import com.orion10110.training.ExersizeOne.Annotation.Start;
+
 public class NuclearBoat {
 	private EngineForNuclearBoat engine =new EngineForNuclearBoat(20);
 	private double locationX;
@@ -14,6 +16,7 @@ public class NuclearBoat {
 		
 	}
 
+	@Start(X=10,Y=30)
 	public void goToXY(double x,double y){
 		engine.startEngine();
 		double distance = Math.sqrt(Math.pow((locationX-x),2)

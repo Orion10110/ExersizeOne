@@ -71,3 +71,4 @@ $RECYCLE.BIN/
 *.jar
 *.war
 *.ear
+/target/

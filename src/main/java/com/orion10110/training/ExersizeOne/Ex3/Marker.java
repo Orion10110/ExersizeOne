@@ -1,10 +1,10 @@
 package com.orion10110.training.ExersizeOne.Ex3;
 
-public class Мarker extends WriterStationery {
+public class Marker extends WriterStationery {
 
 	private double penSize;
 
-	public Мarker(String name,double penSize, String inkColor, double price) {
+	public Marker(String name,double penSize, String inkColor, double price) {
 		super(name,inkColor,price);
 		this.penSize = penSize;
 		// TODO Auto-generated constructor stub
