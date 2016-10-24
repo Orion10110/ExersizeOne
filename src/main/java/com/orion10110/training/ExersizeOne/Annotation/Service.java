@@ -14,5 +14,5 @@ import java.lang.annotation.Target;
 @Retention(RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Service {
-	String name();
+	String name() default "None";
 }

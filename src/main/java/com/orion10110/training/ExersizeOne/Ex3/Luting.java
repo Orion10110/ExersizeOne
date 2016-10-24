@@ -1,6 +1,6 @@
 package com.orion10110.training.ExersizeOne.Ex3;
 
-public class Luting extends ÑorrectionStationery {
+public class Luting extends Ð¡orrectionStationery {
 
 	protected Luting(String name, double price) {
 		super(name, price);

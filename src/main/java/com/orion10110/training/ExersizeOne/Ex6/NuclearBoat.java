@@ -1,22 +1,24 @@
 package com.orion10110.training.ExersizeOne.Ex6;
 
+import com.orion10110.training.ExersizeOne.Annotation.Service;
 import com.orion10110.training.ExersizeOne.Annotation.Start;
 
+@Service
 public class NuclearBoat {
 	private EngineForNuclearBoat engine =new EngineForNuclearBoat(20);
 	private double locationX;
 	private double locationY;
 	
 	
-	
+	@Start()
 	public NuclearBoat(double locationX, double locationY) {
 		super();
 		this.locationX = locationX;
 		this.locationY = locationY;
-		
+		System.out.println("Loc" + this.locationX + " " + this.locationY);
 	}
 
-	@Start(X=10,Y=30)
+	@Start(x=10.0,y=30.0)
 	public void goToXY(double x,double y){
 		engine.startEngine();
 		double distance = Math.sqrt(Math.pow((locationX-x),2)
@@ -24,6 +26,7 @@ public class NuclearBoat {
 		engine.spendFuel(distance);
 		locationX=x;
 		locationY=y;
+		System.out.println("moved to x:"+x+ " y:"+y);
 		engine.stopEngine();
 		
 	}

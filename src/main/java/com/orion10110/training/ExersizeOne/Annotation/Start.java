@@ -1,6 +1,6 @@
 package com.orion10110.training.ExersizeOne.Annotation;
 
-import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Documented;
@@ -11,8 +11,8 @@ import java.lang.annotation.Target;
 @Inherited
 @Documented
 @Retention(RUNTIME)
-@Target(METHOD)
+@Target({METHOD,CONSTRUCTOR})
 public @interface Start {
-	int X() default 0;
-	int Y() default 0;
+	double x() default 0;
+	double y() default 0;
 }
