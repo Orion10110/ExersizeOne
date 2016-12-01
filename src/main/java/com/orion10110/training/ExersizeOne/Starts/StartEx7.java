@@ -2,6 +2,7 @@ package com.orion10110.training.ExersizeOne.Starts;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 import com.orion10110.training.ExersizeOne.Annotation.Service;
@@ -20,6 +21,10 @@ public class StartEx7 {
 
 				Class[] paramTypes = new Class[] { double.class, double.class };
 				Constructor construct = clazz.getConstructor(paramTypes);
+				Field[] fields = clazz.getDeclaredFields();
+				for (Field field : fields) {
+					System.out.println(field.getName());
+				}
 				if (construct.isAnnotationPresent(Start.class)) {
 					Annotation anot = construct.getAnnotation(Start.class);
 					double x = ((Start) anot).x();
