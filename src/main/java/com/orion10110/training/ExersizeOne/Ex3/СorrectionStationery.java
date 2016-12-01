@@ -2,10 +2,10 @@ package com.orion10110.training.ExersizeOne.Ex3;
 
 import com.orion10110.training.ExersizeOne.interfaces.IPrice;
 
-public abstract class Ð¡orrectionStationery extends Stationery{
+public abstract class ÑorrectionStationery extends Stationery{
 	
 	
-	protected Ð¡orrectionStationery(String name, double price) {
+	protected ÑorrectionStationery(String name, double price) {
 		super(name, price);
 	}
 
